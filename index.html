@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculador de Media - @emmartins</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 class="page-title">
+      Calculadora de média</h1>
+      <p class="page-subtitle">
+      Descubra qual a média dos valores que você inserir!
+      </p>
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+    </div>
+
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+    <h1 class="page-title">Insira valor</h1>
+
+    <div class="container-insercao">
+      <div>
+        <input type="number" id="valor" placeholder="Digite seu valor aqui">
+        <input type="button" id="botaoEnvio" value="Enviar valor" onclick="adicionaValor()"> 
+      </div>
+      <div>
+        <button onclick="calcularMedia()">Calcular Média</button>
+        <button onclick="resetarCalculos()">Resetar calculos</button>
+      </div>
+    </div>
+
+    <div class="divResultados escritaResultados">
+        <p>Quantidade de valores inseridos: </p>
+        <div id="quantidadeDeValoresInseridos"></div>
+        <p>Valores inseridos:</p>
+        <div id="valoresInseridos"></div>
+        <p>Media:</p>
+        <div id="mediaEncontrada"></div>
+    </div>
+
+    <footer>
+      <p>Desenvolvido por: Eduardo Martins em Março de 2022</p>
+    </footer>
+  </body>
+</html>
